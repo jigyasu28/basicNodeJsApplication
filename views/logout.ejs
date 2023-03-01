@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logout Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #009688;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #00897b;
+    }
+  </style>
+  <script>
+    function logout() {
+      // Code to clear user session or cookie
+      alert("You have been logged out.");
+      window.location.href = "Login"; // Redirect to login page
+    }
+  </script>
+</head>
+<body>
+  <h1>Logout Page</h1>
+  <p>Are you sure you want to log out?</p>
+  <button onclick="logout()">Logout</button>
+</body>
+</html>

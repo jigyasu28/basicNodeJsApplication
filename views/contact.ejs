@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+     
+    p{
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 30px auto 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type=text], textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    button[type=submit] {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #009688;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button[type=submit]:hover {
+      background-color: #00897b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="contact" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+  
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+  
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+  
+    <button type="submit">Submit</button>
+  </form>
+  <div class="Others">
+    <p>want to see latest smartphones? <a href="mobiles"></a></p>
+    <p><a href="logout">Logout</a></p>
+  </div>
+</body>
+</html>
